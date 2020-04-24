@@ -1,4 +1,4 @@
-USER_ID: 1000, GROUP_ID: 0
+USER_ID: 1000, GROUP_ID: 1000
 nss_wrapper location: /usr/lib/libnss_wrapper.so
 
 
@@ -7,7 +7,7 @@ NO CERTIFICATES PATH FOR IMPORT SET, SKIPPING
 
 
 ------------------ START SAKULI CONTAINER ---------------------------
-USER_ID: 1000, GROUP_ID: 0
+USER_ID: 1000, GROUP_ID: 1000
 nss_wrapper location: /usr/lib/libnss_wrapper.so
 
 ------------------ update chromium-browser.init ------------------
@@ -30,10 +30,10 @@ start window manager
 ------------------ VNC environment started ------------------
 
 VNCSERVER started on DISPLAY= :1 
-	=> connect via VNC viewer with 192.168.19.3:5901
+	=> connect via VNC viewer with 192.168.10.80:5901
 
 noVNC HTML client started:
-	=> connect via http://192.168.19.3:6901/?password=...
+	=> connect via http://192.168.10.80:6901/?password=...
 
 
 ------------------ /headless/.vnc/*:1.log ------------------
@@ -55,12 +55,12 @@ Press Ctrl-C to exit
 
 ------------------ startup of OpenBox window manager ------------------
 
-** (process:441): WARNING **: 17:59:19.319: xdg-autostart.vala:125: Error: Error opening directory ?/headless/.config/autostart?: No such file or directory
+** (process:441): WARNING **: 09:56:20.563: xdg-autostart.vala:125: Error: Error opening directory ?/headless/.config/autostart?: No such file or directory
 
-** Message: 17:59:19.319: xdg-autostart.vala:39: Processing /etc/xdg/autostart/at-spi-dbus-bus.desktop file.
-** Message: 17:59:19.320: xdg-autostart.vala:94: Launching: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately (at-spi-dbus-bus.desktop)
-** Message: 17:59:19.320: xdg-autostart.vala:39: Processing /etc/xdg/autostart/xdg-user-dirs.desktop file.
-** Message: 17:59:19.321: xdg-autostart.vala:94: Launching: xdg-user-dirs-update (xdg-user-dirs.desktop)
+** Message: 09:56:20.563: xdg-autostart.vala:39: Processing /etc/xdg/autostart/at-spi-dbus-bus.desktop file.
+** Message: 09:56:20.564: xdg-autostart.vala:94: Launching: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately (at-spi-dbus-bus.desktop)
+** Message: 09:56:20.564: xdg-autostart.vala:39: Processing /etc/xdg/autostart/xdg-user-dirs.desktop file.
+** Message: 09:56:20.565: xdg-autostart.vala:94: Launching: xdg-user-dirs-update (xdg-user-dirs.desktop)
 Failed to launch bus: Failed to connect to session busOpenbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
 
 ==> /headless/.vnc/e2e-sakuli-tests:1.log <==
